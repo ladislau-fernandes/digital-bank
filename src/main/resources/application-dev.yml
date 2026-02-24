@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/digitalbank
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 2000ms
+
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    com.digitalbank: DEBUG
+    org.springframework.security: DEBUG
+    org.apache.kafka: WARN
+
+aws:
+  s3:
+    endpoint: http://localhost:4566  # LocalStack
