@@ -226,9 +226,3 @@ AWS_REGION=us-east-1
 - Autenticação **stateless** com JWT
 - Validação de ownership (usuário só opera em suas próprias contas)
 - Secrets via variáveis de ambiente (nunca no código)
-
----
-
-## 👨‍💻 Desenvolvedor
-
-Feito com ❤️ como portfólio para vagas de **Java Júnior**.
